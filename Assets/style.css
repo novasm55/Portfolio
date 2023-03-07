@@ -6,21 +6,31 @@ nav {
 
 }
 
-section{
-
-}
-
-.class1 {
-
+.card {
+    width: 370px;
+    height: 200px;
+    background-color: purple;
+    color: white;
 }
 
 .class2 {
 
 }
-
+#aboutMe {
+    display: flex;
+    flex: wrap;
+}
 #scrollto1 {
 
 }
 #profilepic {
 
 }
+
+
+@media  (max-width: 768px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }

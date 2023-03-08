@@ -15,14 +15,16 @@ nav {
 
 /* Class selectors */
 
-
+/* Card Container */
 .cards {
-    /* We first create a flex layout context */
+
     position: relative;
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
   }
+
+/* Individual Card Styling */
 
 .card {
     position: relative;
@@ -34,6 +36,8 @@ nav {
     color: white;
 
 }
+
+/* Unique attribute value of first card.  Double regular card width Styling */
 
 .card:nth-child(1){
   width: 90%;
@@ -59,14 +63,7 @@ nav {
 
 }
 .card .cardTop:hover  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    max-width: 100%;
-    background-color: white;
     opacity: 1;
-    color: black;
   
   
 }
@@ -92,5 +89,9 @@ nav {
         display: flex;
         flex: wrap;
     }
-  }
+
+    .card {
+      width: 90%;
+    }
+    }
 

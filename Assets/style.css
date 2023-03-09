@@ -37,7 +37,7 @@ nav {
 
 }
 
-/* Unique attribute value of first card.  Double regular card width Styling */
+/* Unique attribute value of first elemeent that uses card class.  Double regular card width Styling */
 
 .card:nth-child(1){
   width: 90%;
@@ -50,6 +50,8 @@ nav {
   align-items: stretch;
 }
 
+/* opacity when over whole card */
+
 .card:hover .cardTop  {
   position: absolute;
   top: 0;
@@ -59,13 +61,12 @@ nav {
   background-color: white;
   opacity: 0.5;
   color: black;
-
-
 }
+
+/* opacity when over card top */
+
 .card .cardTop:hover  {
     opacity: 1;
-  
-  
 }
 
 /* ID selectors */

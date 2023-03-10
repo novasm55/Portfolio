@@ -1,14 +1,18 @@
+/* Universal selector */
+
 * {
 
 }
 
+/* Element selectors */ 
 header {
   background-color: rgb(30, 187, 174);
   color: black;
+  flex-wrap: wrap;
 }
 nav {
-  background-color: white;
-
+  background-color: rgb(30, 187, 174);
+  flex-wrap: wrap;
 }
 
 
@@ -31,7 +35,7 @@ nav {
     overflow: hidden;
     display: flex column;
   
-    width: 45%;
+    width: 50%;
     height: 250px;
     color: white;
 
@@ -40,9 +44,11 @@ nav {
 /* Unique attribute value of first elemeent that uses card class.  Double regular card width Styling */
 
 .card:nth-child(1){
-  width: 90%;
+  width: 100%;
 
 }
+
+
 .card img {
   width: 100%;
   height: 250px;
@@ -71,16 +77,136 @@ nav {
 
 /* ID selectors */
 
-#aboutMe {
-    display: flex;
-    flex: column;
+/* aboutme container */
+
+.aboutMeContainer {
+
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  }
+
+
+.aboutMeCard {
+    position: relative;
+    overflow: visible;
+    display: column;
+  
+    width: 100%;
+    height: 250px;
+
+
 }
 
 
+.aboutMeCard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  align-items: stretch;
+}
+
+.aboutMeCardTop {
+  position: relative;
+}
 
 #profilepic {
+  position:absolute;
+  display: flex;
+  overflow: hidden;
   height: 250px;
-  width: 250px;
+  top: 0;
+  right: 0;
+  width: 20%;
+  
+}
+.aboutMeCard:hover #profilepic {
+  height: 0px;
+  width: 0px;
+}
+.aboutMeCard:hover .aboutMeCardTop {
+  position: absolute;
+  flex-wrap: wrap;
+  display: flex wrap;
+  top: 0;
+  left: 0;
+  width: auto;
+  max-width: auto;
+  background-color: darkgray;
+  color: white;
+  opacity: 0.5;
+ 
+}
+
+
+.aboutMeCard .aboutMeCardTop:hover {
+
+  opacity: 0.9;
+}
+
+/* Contact section selectors */
+.contactContainer {
+
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  }
+
+
+.contactCard {
+    position: relative;
+    overflow: visible;
+    display: column;
+  
+    width: 100%;
+    height: 250px;
+
+
+}
+
+
+.contactCard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  align-items: stretch;
+}
+
+.contactCardTop {
+  position: relative;
+}
+
+#profilepic {
+  position:absolute;
+  display: flex;
+  overflow: hidden;
+  height: 250px;
+  top: 0;
+  right: 0;
+  width: 20%;
+  
+}
+
+.contactCard:hover .contactCardTop {
+  position: absolute;
+  flex-wrap: wrap;
+  display: flex wrap;
+  top: 0;
+  left: 0;
+  width: auto;
+  max-width: auto;
+  color: white;
+  background-color: darkgray;
+  opacity: 0.5;
+ 
+}
+
+
+.contactCard .contactCardTop:hover {
+
+  opacity: 0.9;
 }
 
 /* media query */
@@ -88,11 +214,11 @@ nav {
 @media  (max-width: 768px) {
     section {
         display: flex;
-        flex: wrap;
+    
     }
 
     .card {
-      width: 90%;
+      width: 100%;
     }
     }
 
